@@ -1,0 +1,116 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript" SRC="calwork.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- hide from old browsers
+
+var daDate = new Date();
+var dd=daDate.getDate();
+var mm=daDate.getMonth();
+var yy=daDate.getFullYear();
+var hrs=daDate.getHours();
+var mns=daDate.getMinutes();
+var colon = ":";
+if (mns<10) { colon = ":0"; } else { colon = ":"; }
+var dateTxt = monthName(mm) + " " + dd + ", " + yy;
+// end of script hiding 1 -->
+</SCRIPT>
+</head>
+<body  bgcolor="#CCFFFF">
+<table border=0>
+<tr>
+<td><img src="images/BlueBorderFH.gif"></td>
+<td><h3><center> Eddie Mathias Jacobson / Sarah Delilah Anderson </center></h3>
+<h4><center>Family Organization Web Pages</center></h4></td>
+<td valign="bottom"><cite>Last update: 1/26/2016 - jfb<br>(<a href="Latest.html">click here for list of recent updates</a>)</cite></td>
+</tr>
+</table>
+<table border=0>
+<tr>
+<td valign=top><hr/><b>NEWS</b><br/>
+<br>
+<a href="news.html">News Items</a><br>
+
+<hr/>
+<b>Home - - &gt;</b><br/>
+<a href="histories.html">Histories</a><br/>
+<a href="research/index.html">Research</a><br/>
+<a href="charts.html">Charts</a><br/>
+<a href="photos.html">Photos</a><br/>
+<a href="maps.html">Maps</a><br/>
+<a href="res/index.html">Restricted</a><br/>
+<a href="news.html">News</a><br/>
+<a href="basicinfo.html">Info</a><br/>
+<a href="contact.html">Contact</a><br/>
+
+<p align=right>
+<form method="POST" action="" name ="calendar" id ="calendar">
+<center>
+<BUTTON name="prevButton" type="button" value="prevButton" id="prevButton" onMouseUp=doPrevMon()>
+<IMG src="left.gif" alt="previous month">
+</BUTTON>
+<BUTTON name="nextButton" type="button" value="nextButton" id="nextButton" onMouseUp =doNextMon()>
+<IMG src="right.gif" alt="next month">
+</BUTTON>
+<br>
+<TEXTAREA name="calDisplay" readonly rows = "9" cols = "22" wrap = "off" style="font-family: Courier; font-size: 9pt; border-style: none; overflow:hidden; BACKGROUND-COLOR: #FFFFFF">
+</TEXTAREA><br/>
+<input type="text" name="today" readonly size=20 value="" />
+</center>
+	<script type="text/javascript">
+	function doPrevMon() {
+	  mm -= 1;
+	  if (mm<0) {
+	    mm = 11;
+	    yy -= 1;
+	  }
+	  document.calendar.calDisplay.value = "\n" + makeCalendar(yy,mm,0,1);
+	}
+	function doNextMon() {
+	  mm += 1;
+	  if (mm>11) {
+	    mm = 0;
+	    yy += 1;
+	  }
+	  document.calendar.calDisplay.value = "\n" + makeCalendar(yy,mm,0,1);
+	}
+	</script>
+</form>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- hide from old browsers
+document.calendar.calDisplay.value = "\n" + makeCalendar(yy,mm,0,1);
+document.calendar.today.value = dateTxt;
+// end of script hiding -->
+</SCRIPT>
+</p>
+</td>
+<td valign=top><img src="images/Eddie2.jpg" width="198" height = "270">
+<p><a href="http://buchananspot.com/EddieDelilahNews/">Eddie/Delilah Newsletter</a> - <br/>Family History Newsletter</p>
+Family Descendants:<br>
+<a href="images/families/OHJacobson/MarenHansenFAM.html">Ole Hansen Jacobson family</a><br>
+<a href="images/families/JohnWDutson/AnnGreenFAM.html">John William Dutson family</a><br>
+<a href="images/families/APAnderson/JensAndersenFAM.html">Jens Anderson family</a><br>
+<a href="images/families/JohnLovell/JohnAnnLovellFAM.html">John Lovell family</a><br>
+
+</td>
+<td valign=top><img src="images/Delilah3.jpg" width="216" height = "264"></td>
+<td valign=top>
+<hr/>
+<a href="basicinfo.html">Information about <br/>the organization</a>
+<hr/><p><b>Contact information</b><br/>
+Family Representative:<br/>
+Sylvan Jacobson<br>
+P.O. Box 1044<br>
+Tooele, UT  84074-1044<p>
+<a href="contact.html"><b>Contact information</b></a>
+<hr>
+<a href="res/index.html"><b>Materials restricted <br/>from the Public</b></a><br/>
+(restricted information,<br/> including recent histories,<br/> patriarchal blessings,<br/> temple information, etc.)<br/>
+Contact Joseph (see contact link) for the <br/>login and password.<br/>
+</td>
+</tr>
+<tr>
+</tr>
+</table>
+</body></html>

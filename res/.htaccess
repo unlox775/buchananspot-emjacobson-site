@@ -1,0 +1,4 @@
+AuthName "Eddie and Delilah family Private Information"
+AuthType Basic
+AuthUserFile /home/capnpcut/public_html/buchananspot.com/sites/EMJ/res/.htpasswd
+Require valid-user
